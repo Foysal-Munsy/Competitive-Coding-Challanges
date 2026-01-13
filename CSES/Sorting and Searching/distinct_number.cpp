@@ -19,15 +19,16 @@ const int N = 2e5 + 5;
 
 void solve()
 {
-    long long n, num;
+    int n;
     cin >> n;
-    unordered_map<ll, ll> mp;
-    for (ll i = 0; i < n; i++)
+    set<int> st;
+    for (int i = 1; i <= n; i++)
     {
-        cin >> num;
-        mp[num]++;
+        int x;
+        cin >> x;
+        st.insert(x);
     }
-    cout << mp.size() << nl;
+    cout << st.size() << "\n";
 }
 
 signed main()
