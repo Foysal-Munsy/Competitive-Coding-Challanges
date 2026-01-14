@@ -1,0 +1,1 @@
+{"name":"Local: apartments","url":"/Users/mrfm/Documents/XPSC/Competitive/CSES/Sorting and Searching/apartments.cpp","tests":[{"id":1768373689253,"input":"4 3 5\n60 45 80 60\n30 60 75","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/mrfm/Documents/XPSC/Competitive/CSES/Sorting and Searching/apartments.cpp","group":"local","local":true}
