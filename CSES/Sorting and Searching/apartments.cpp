@@ -26,6 +26,8 @@ void solve()
         cin >> a[i];
     for (int i = 0; i < m; i++)
         cin >> b[i];
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
     int i = 0, j = 0, count = 0;
     while (i < n && j < m)
     {
