@@ -1,4 +1,4 @@
-//Problem link: https://cses.fi/problemset/task/1094
+// Problem link: https://cses.fi/problemset/task/1094
 
 //
 // Created by Foysal Munsy on 24 / 03 / 2024
@@ -18,7 +18,7 @@ typedef long double ld;
 #define debug(args...)
 #endif
 const int N = 2e5 + 5;
- 
+
 void solve()
 {
     ll n;
@@ -43,7 +43,7 @@ void solve()
     }
     cout << moves << '\n';
 }
- 
+
 signed main()
 {
 #ifndef LOKAL
@@ -53,4 +53,3 @@ signed main()
     solve();
     return 0;
 }
-
