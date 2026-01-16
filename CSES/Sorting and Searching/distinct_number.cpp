@@ -16,7 +16,7 @@ typedef long double ld;
 #define debug(args...)
 #endif
 const int N = 2e5 + 5;
-
+// Distinct Number - https://cses.fi/problemset/task/1621
 void solve()
 {
     int n;

@@ -16,7 +16,7 @@ typedef long double ld;
 #define debug(args...)
 #endif
 const int N = 2e5 + 5;
-
+// Ferris Wheel - https://cses.fi/problemset/task/1090
 void solve()
 {
     int n, x;
