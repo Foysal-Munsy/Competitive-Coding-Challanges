@@ -22,38 +22,27 @@ void solve()
 {
     int n, m;
     cin >> n >> m;
-    deque<int> a(n), b(m), c;
-    for (int &val : a)
-        cin >> val;
-    for (int &val : b)
-        cin >> val;
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-    //  3 5 5 7 8
-    //  3 4 8
-
-    while (!b.empty())
+    multiset<int> a;
+    for (int i = 0, val; i < n; i++)
     {
-        if (a.front() <= b.front())
-        {
-            c.push_back(b.front());
-            b.pop_front(), a.pop_front();
-        }
-        else if (a.front() > b.front())
-        {
-
-            b.pop_front();
-        }
+        cin >> val;
+        a.insert(val);
     }
-    for (int i = 0; i < m; i++)
+    for (int i = 0, x; i < m; i++)
     {
-        if (!c.empty())
+        cin >> x;
+        auto it = a.upper_bound(x);
+        auto in = a.begin();
+        if (it == in)
         {
-            cout << c.front() << '\n';
-            c.pop_front();
+            cout << -1 << "\n";
         }
         else
-            cout << "-1\n";
+        {
+            it--;
+            cout << *it << '\n';
+            a.erase(it);
+        }
     }
 }
 
